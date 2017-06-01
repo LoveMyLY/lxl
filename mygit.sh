@@ -6,13 +6,14 @@
 #########################################################################
 #!/bin/bash
 i=0
-git add .
-git commit -m $1
-git remote add origin $2
-#git pull origin master
-#git push -u origin $3
+echo 0:not init,1:init
 read i
 if [ $i -eq 1 ]
 then
 	git init
 fi
+git add .
+git commit -m $1
+git remote add origin $2
+#git pull origin master
+#git push -u origin $3
