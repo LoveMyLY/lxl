@@ -12,7 +12,7 @@ git remote add origin $2
 #git pull origin master
 #git push -u origin $3
 i=$4
-if i==0
+if i==1
 then
 	git init
 	echo git init
