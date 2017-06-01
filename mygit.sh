@@ -13,7 +13,7 @@ git remote add origin $2
 #git push -u origin $3
 read i
 echo $i
-if $i==1
+if [ $i -eq 1]
 then
 	git init
 	echo $i
