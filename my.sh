@@ -9,7 +9,7 @@ echo tar  git
 read menu
 case "$menu" in 
 	"tar" )
-		echo -e "filename:\c"
+		echo "filename:\c"
 		read name
 		tar -cf $name .
 		;;
@@ -24,7 +24,8 @@ case "$menu" in
 		if upload=y
 		then
 			git pull origin master
+			read -p "branch:\c" branch
+			git push -u origin $branch
 		fi
-			#git push -u origin $3
 		;;
 esac
