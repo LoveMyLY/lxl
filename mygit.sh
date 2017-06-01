@@ -11,7 +11,7 @@ git commit -m $1
 git remote add origin $2
 #git pull origin master
 #git push -u origin $3
-i=$4
+read i
 if i==1
 then
 	git init
